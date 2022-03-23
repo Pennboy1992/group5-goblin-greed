@@ -1,6 +1,7 @@
-import java.util.Scanner;
-import com.Rooms.Entrance;
 import com.Players.PlayableCharacter;
+import com.Rooms.Entrance;
+
+import java.util.Scanner;
 
 
 public class Main {
@@ -11,6 +12,15 @@ public class Main {
         GRAB,
         QUIT,
         HELP
+    }
+
+    enum inGameCommands {
+        GO,
+        TALK,
+        ATTACK,
+        LOOK,
+        GET
+
     }
 
     public static void main(String[] args) {
