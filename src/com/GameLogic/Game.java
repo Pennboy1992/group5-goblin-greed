@@ -8,7 +8,6 @@ import org.json.simple.parser.ParseException;
 
 import java.io.IOException;
 import java.util.ArrayList;
-import java.util.Collection;
 import java.util.List;
 import java.util.Scanner;
 import java.util.stream.Collectors;
@@ -84,10 +83,11 @@ public class Game {
     public void lookAround(){
         Player player = getPlayer();
         Room currentRoom = player.getCurrentRoom();
-        System.out.println("You see: \n");
+        System.out.println("You see:");
         ArrayList<Item> roomItems = (ArrayList<Item>) currentRoom.getItems();
         for(int x=0; x< currentRoom.getItems().size(); x++){
-            System.out.println(roomItems.get(x));
+            Item s = roomItems.get(x);
+            System.out.println(s.getName());
         }
 
 
