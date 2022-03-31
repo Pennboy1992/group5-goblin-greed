@@ -84,6 +84,8 @@ public class Game {
                 PlayerMechanics.lookItem(location[1], player1.getCurrentRoom().getItems(),player1.getItems());
             } else if ("get".equalsIgnoreCase(location[0])) {
                 PlayerMechanics.getItem(location[1], player1.getCurrentRoom().getItems(), player1.getItems());
+            } else if("drop".equalsIgnoreCase(location[0])) {
+                PlayerMechanics.dropItem(location[1],player1.getCurrentRoom().getItems(),player1.getItems());
             } else if ("check".equalsIgnoreCase(location[0]) && "inventory".equalsIgnoreCase(location[1])) {
                 PlayerMechanics.checkInventory(getPlayer());
             } else {
